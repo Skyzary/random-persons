@@ -3,6 +3,11 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 const root = document.querySelector(".sub-root");
 const btn = document.querySelector('.refresh');
+
+export const clearContainer = () => {
+	root.innerHTML = '';
+};
+
 export const render = async () => {
 	try {
 		const response = await fetchData();
@@ -19,7 +24,6 @@ export const render = async () => {
 	</ul>
 	</div>
 `
-		root.innerHTML = '';
 		root.insertAdjacentHTML("beforeend", markup);
 	} catch (error) {
 		console.log(error);
