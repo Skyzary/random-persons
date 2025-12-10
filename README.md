@@ -10,7 +10,7 @@ This project was created to practice asynchronous JavaScript (Async/Await), DOM 
 
 ## 🚀 Demo
 
-You can view the live project [here](https://skyzary.github.io/random-persons/):
+You can view the live project [here](https://skyzary.github.io/random-persons/)
 
 ## 🛠 Tech Stack
 
