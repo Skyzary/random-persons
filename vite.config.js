@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/random-persons/',
+  base: '/random_persons/',
   build:{
     target: 'esnext'
   }
