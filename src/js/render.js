@@ -14,7 +14,7 @@ export const render = async () => {
 		<ul class="list">
 		<li class="fname">Имя: ${person.name.first}</li>
 		<li class="lname">Фамилия: ${person.name.last}</li>
-		<li class="gender">Пол: ${person.gender}</li>z
+		<li class="gender">Пол: ${person.gender}</li>
 		<li class="email">Email: ${person.email}</li>
 		<li class="dob">Дата рождения: ${new Date(person.dob.date).toLocaleDateString()}</li>
 		<li class="age">Возраст: ${person.dob.age} </li>
