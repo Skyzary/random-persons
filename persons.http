@@ -1,4 +1,4 @@
 ### GET request to example server
-GET https://randomuser.me/api/
+GET https://randomuser.me/api/?results=5
 
 ###
