@@ -9,15 +9,15 @@ export const render = async () => {
 	try {
 		const response = await fetchData();
 		const data = response.data.results;
-		const markup = data.map(d => (`<div class="wrapper">
-		<img src="${d.picture.large}" alt="avatar" class="avatar" width="100" height="100">
+		const markup = data.map(person => (`<div class="wrapper">
+		<img src="${person.picture.large}" alt="avatar" class="avatar" width="100" height="100">
 		<ul class="list">
-		<li class="fname">Имя: ${d.name.first}</li>
-		<li class="lname">Фамилия: ${d.name.last}</li>
-		<li class="gender">Пол: ${d.gender}</li>
-		<li class="email">Email: ${d.email}</li>
-		<li class="dob">Дата рождения: ${new Date(d.dob.date).toLocaleDateString()}</li>
-		<li class="age">Возраст: ${d.dob.age} </li>
+		<li class="fname">Имя: ${person.name.first}</li>
+		<li class="lname">Фамилия: ${person.name.last}</li>
+		<li class="gender">Пол: ${person.gender}</li>z
+		<li class="email">Email: ${person.email}</li>
+		<li class="dob">Дата рождения: ${new Date(person.dob.date).toLocaleDateString()}</li>
+		<li class="age">Возраст: ${person.dob.age} </li>
 	</ul>
 	</div>
 `
