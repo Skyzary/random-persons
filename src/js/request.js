@@ -1,9 +1,10 @@
 import axios from "axios";
 const baseURL = 'https://randomuser.me/api/'
 
-export async function fetchData() {
+export async function fetchData(results = 1) {
 	try {
-		return  await axios.get(baseURL)
+		// Используем параметр API для получения нескольких пользователей сразу
+		return await axios.get(`${baseURL}?results=${results}`);
 
 	}
 	catch (error) {
@@ -11,5 +12,3 @@ export async function fetchData() {
 		console.log('error')
 	}
 }
-
-
